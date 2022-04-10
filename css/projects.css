@@ -1,0 +1,302 @@
+#projects {
+  margin: 0 auto;
+}
+
+#projects .group {
+}
+
+#projects .group > h5,
+#projects .group > h1 {
+  margin-left: 1rem;
+}
+
+#projects .group .gallery {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+#projects .group .gallery .item {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 0;
+  min-height: 30rem;
+  height: 100%;
+  max-height: 35rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .group .gallery .item .item-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  align-self: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+}
+
+#projects .group .gallery .item .item-title h2 {
+  font-size: 1.8rem;
+}
+
+#projects .group .gallery .item .item-title h5 {
+  font-size: 0.9rem;
+}
+
+#projects .group .gallery .item a::before {
+  opacity: 0;
+  transition: all 0.2s linear;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 20, 30, 0.9);
+  display: block;
+
+  z-index: 1;
+}
+
+#projects .group .gallery .item a:hover::before {
+  opacity: 1;
+}
+
+#projects .group .gallery .item a .regular {
+  transition: all 0.2s linear;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#projects .group .gallery .item a:hover .regular {
+  opacity: 0;
+}
+
+#projects .group .gallery .item a .on-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  opacity: 0;
+  transition: all 0.2s linear;
+  display: block;
+
+  z-index: 2;
+}
+
+#projects .group .gallery .item a:hover .on-hover {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#projects .group .gallery .item a .on-hover h2 {
+  color: white;
+}
+
+#projects .group .gallery .item a .regular,
+#projects .group .gallery .item a .on-hover {
+  max-width: 90%;
+}
+
+#projects .group .gallery .item a .view {
+  transition: all 0.2s linear;
+  display: block;
+  color: #878a8f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+#projects .group .gallery .item img {
+  width: 200%;
+  transition: all 0.2s linear;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #projects .group .gallery .item {
+    max-height: 40rem;
+  }
+
+  #projects .group:not(:first-child) {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  #projects .group .gallery [class*='col-'] {
+    max-width: 50%;
+  }
+
+  #projects .group .gallery [class*='col-']:nth-child(odd) {
+    padding-right: 0.5rem;
+  }
+
+  #projects .group .gallery [class*='col-']:nth-child(even) {
+    padding-left: 0.5rem;
+  }
+
+  #projects .group .gallery .item {
+    max-height: 80rem;
+  }
+
+  #projects .group .gallery .item img {
+    width: 164%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #projects {
+    padding-top: 5rem;
+  }
+
+  #projects .group .gallery .item .item-title h2 {
+    font-size: 2rem;
+  }
+
+  #projects .group .gallery .item .item-title h5 {
+    font-size: 1rem;
+  }
+
+  #projects .group .gallery .item a .view {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  #projects .group .gallery .item a .regular {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #projects .group .gallery .item a .on-hover {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #projects .group > h5,
+  #projects .group > h1 {
+    margin-left: 2rem;
+  }
+
+  #projects .group .gallery [class*='col-']:nth-child(odd) {
+    padding-right: 1rem;
+    padding-left: 2rem;
+  }
+
+  #projects .group .gallery [class*='col-']:nth-child(even) {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  #projects .group .gallery .item img {
+    width: 144%;
+  }
+
+  #projects .group .gallery .item a .regular {
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #projects .group .gallery .item a .on-hover {
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #projects .group .gallery .item a .view {
+    line-height: 2.5;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1280px) {
+  #projects .group > h5,
+  #projects .group > h1 {
+    margin-left: 3rem;
+  }
+
+  #projects .group .gallery [class*='col-']:nth-child(odd) {
+    padding-right: 1.5rem;
+    padding-left: 3rem;
+  }
+
+  #projects .group .gallery [class*='col-']:nth-child(even) {
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+  }
+
+  #projects .group .gallery .item img {
+    width: 124%;
+  }
+
+  #projects .group .gallery .item a:hover + img {
+    transform: scale(1.1);
+  }
+
+  #projects .group .gallery .item a .regular {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #projects .group .gallery .item a .on-hover {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #projects .group .gallery .item a .view {
+    line-height: 3;
+  }
+
+  #projects .group .gallery .item a .regular,
+  #projects .group .gallery .item a .on-hover {
+    max-width: 50%;
+  }
+
+  #projects .group:not(:first-child) {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  #projects {
+    max-width: 1480px;
+  }
+}
+
+@media only screen and (min-width: 1540px) {
+  #projects {
+    padding-top: 0;
+  }
+}

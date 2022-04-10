@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Hairline'), local('Helvetica-Now-Display-Hairline'),
+        url('HelveticaNowDisplay-Hairline.woff2') format('woff2'),
+        url('HelveticaNowDisplay-Hairline.woff') format('woff'),
+        url('HelveticaNowDisplay-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }

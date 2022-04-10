@@ -1,0 +1,226 @@
+#intro {
+  margin: 0 auto;
+}
+
+#intro .row {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 6rem;
+}
+
+#intro nav * {
+  display: inline-block;
+}
+
+#intro nav .or {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  font-size: 1rem;
+}
+
+#intro .details {
+  position: relative;
+  top: -3rem;
+}
+
+#intro .picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#intro .picture img {
+  object-fit: contain;
+  max-width: 25rem;
+  min-width: 330px;
+}
+
+#intro .developer {
+  display: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  z-index: -1;
+}
+
+#intro .developer img {
+  width: 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #intro {
+    margin-bottom: 6rem;
+  }
+  #intro .details {
+    position: static;
+    padding-top: 6rem;
+  }
+
+  #intro .picture {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+  #intro .picture img {
+    object-fit: cover;
+    max-width: 25rem;
+    min-width: 25rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #intro {
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #intro .details {
+    position: static;
+
+    padding-top: 15rem;
+  }
+
+  #intro .details :is(h1, h2, h3) {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #intro .picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+  #intro .picture img {
+    max-width: 50rem;
+    min-width: 50rem;
+    animation-name: fade-in;
+    animation-duration: 2s;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #intro {
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #intro .details :is(h1, h2, h3) {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #intro .developer {
+    display: block;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  }
+}
+
+/* Large devices (laptops/desktops, 1070px and up) */
+@media only screen and (min-width: 1070px) {
+  #intro {
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #intro .details :is(h1, h2, h3) {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #intro .picture {
+    justify-content: flex-end;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #intro {
+    min-height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #intro .details :is(h1, h2, h3) {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #intro .picture {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1336px) {
+  #intro .picture {
+    justify-content: flex-end;
+    padding-right: 3rem;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  #intro {
+    max-width: 1480px;
+  }
+}
+
+@media only screen and (min-width: 1540px) {
+  #intro .row {
+    flex-direction: row;
+  }
+
+  #intro .details {
+    max-width: 50%;
+  }
+
+  #intro .picture {
+    position: static;
+    max-width: 50%;
+    justify-content: center;
+    padding-top: 0;
+    overflow: visible;
+  }
+
+  #intro .developer {
+    display: block;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    z-index: -2;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  #intro .picture img {
+    min-width: 55rem;
+    max-width: 55rem;
+  }
+}

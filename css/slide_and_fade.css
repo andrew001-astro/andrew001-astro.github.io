@@ -1,0 +1,28 @@
+.slide {
+  transition: all 0.7s ease-in;
+  position: relative;
+  top: 3rem;
+}
+
+.slide-up {
+  top: 0;
+}
+
+.fade {
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.slide-up-out {
+  top: -3rem;
+  transition: all 0.9s ease-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Andrew Gutz - Web Dev and Designer</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/responsiveness.css" rel="stylesheet" />
+    <link href="css/slide_and_fade.css" rel="stylesheet" />
+    <link href="css/intro.css" rel="stylesheet" />
+
+    <!-- fonts -->
+    <link
+      href="fonts/HelveticaNowDisplay-ExtraBold/style.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Redressed&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="intro">
+        <div class="developer">
+          <img src="img/developer.png" alt="" />
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-7 col-md-8 col-lg-8 col-xl-7 details">
+            <h5 class="slide-fade">Andrew Gutierrez</h5>
+            <h1 class="slide-fade">
+              Web Developer
+              <br />
+              and Designer
+            </h1>
+            <p class="slide-fade">
+              Web Developer and Designer who focuses on writing clean, elegant
+              and efficient code.
+            </p>
+            <p class="slide-fade">
+              Aspiring Fullstack Dev, Open to new experciences and willing to
+              learn new tech stacks.
+            </p>
+            <nav class="slide-fade">
+              <a href="#"><h4>View Projects</h4></a>
+              <span class="or">or</span>
+              <a href="#"><h4>Check Tech Stacks</h4></a>
+            </nav>
+          </div>
+          <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-7 picture">
+            <img src="img/me-fading.png" />
+          </div>
+        </div>
+      </div>
+      <div id="intro">
+        <div class="developer">
+          <img src="img/developer.png" alt="" />
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-7 col-md-8 col-lg-8 col-xl-7 details">
+            <h5 class="slide-fade">Andrew Gutierrez</h5>
+            <h1 class="slide-fade" style="color: red;">
+              Web Developer
+              <br />
+              and Designer
+            </h1>
+            <p class="slide-fade">
+              Web Developer and Designer who focuses on writing clean, elegant
+              and efficient code.
+            </p>
+            <p class="slide-fade">
+              Aspiring Fullstack Dev, Open to new experciences and willing to
+              learn new tech stacks.
+            </p>
+            <nav class="slide-fade">
+              <a href="#"><h4>View Projects</h4></a>
+              <span class="or">or</span>
+              <a href="#"><h4>Check Tech Stacks</h4></a>
+            </nav>
+          </div>
+          <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-7 picture">
+            <img src="img/me-fading.png" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      ;(() => {
+        let introChildren = document.querySelectorAll('.details .slide-fade')
+        introChildren.forEach((element) => {
+          element.classList.add('slide', 'fade')
+        })
+
+        introChildren.forEach((element, index) => {
+          setTimeout(() => {
+            element.classList.add('slide-up', 'fade-in')
+          }, 200 * (index + 1))
+        })
+      })()
+    </script>
+  </body>
+</html>
