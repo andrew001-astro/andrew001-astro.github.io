@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Andrew Gutz - Web Dev and Designer</title>
+    <title>Portfolio | Andrew Gutz - Web Developer</title>
 
     <link rel="icon" href="img/mylogo-normal.png" />
 
@@ -17,6 +17,9 @@
 
     <!-- projects -->
     <link href="css/projects.css" rel="stylesheet" />
+
+    <!-- tech stacks -->
+    <link href="css/tech_stacks.css" rel="stylesheet" />
 
     <!-- fonts -->
     <link
@@ -47,9 +50,9 @@
           <div class="col-12 col-sm-7 col-md-8 col-lg-8 col-xl-7 details">
             <h5 class="slide-fade">Andrew Gutierrez</h5>
             <h1 class="slide-fade">
-              Website developer
+              Web Application and
               <br />
-              and designer
+              Website developer
             </h1>
             <p class="slide-fade">
               Web Developer and Designer who focuses on writing clean, elegant
@@ -76,7 +79,7 @@
       </section>
       <section id="projects">
         <div class="group">
-          <h5>Employment Works</h5>
+          <h5>Employment Work</h5>
           <h1>Web Apps</h1>
           <div class="row gallery">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -172,6 +175,76 @@
           </div>
         </div>
       </section>
+      <section id="tech_stacks">
+        <div class="row">
+          <div class="col-12">
+            <h5>Tech Stacks</h5>
+            <h1>What i use at work</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>HTML</h2>
+              <img src="img/tech_stacks/html.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>CSS</h2>
+              <img src="img/tech_stacks/css.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>Javascript</h2>
+              <img src="img/tech_stacks/js.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>Booststrap</h2>
+              <img src="img/tech_stacks/bootstrap.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>PHP</h2>
+              <img src="img/tech_stacks/php.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>Laravel</h2>
+              <img src="img/tech_stacks/laravel.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>Java</h2>
+              <img src="img/tech_stacks/java.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>React</h2>
+              <img src="img/tech_stacks/react.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>SQL</h2>
+              <img src="img/tech_stacks/sql.png" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="item">
+              <h2>Adobe Photoshop</h2>
+              <img src="img/tech_stacks/adobe_photoshop.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="js/element_checker_if_on_screen.js"></script>
@@ -185,6 +258,11 @@
     <script>
       // container of all elements
       let totalElements = []
+
+      // let introChildren = Array.from(
+      //   document.querySelectorAll('#intro .details .slide-fade'),
+      // )
+      // totalElements = totalElements.concat(introChildren)
 
       // get projects children
       let projects = document.querySelectorAll(

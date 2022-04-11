@@ -1,7 +1,7 @@
 ;(() => {
   setTimeout(() => {
     window.scrollTo(0, 0)
-  }, 100)
+  }, 300)
 
   let isThemeDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   let icon = document.querySelector("link[rel='icon']")
