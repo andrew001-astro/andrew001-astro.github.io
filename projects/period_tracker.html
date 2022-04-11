@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Andrew Gutz - Web Dev and Designer</title>
+
+    <link rel="icon" href="../img/mylogo-normal.png" />
+
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/responsiveness.css" rel="stylesheet" />
+    <link href="../css/slide_and_fade.css" rel="stylesheet" />
+
+    <!-- project -->
+    <link href="../css/project.css" rel="stylesheet" />
+
+    <!-- fonts -->
+    <link
+      href="../fonts/HelveticaNowDisplay-ExtraBold/style.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Redressed&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="../icons/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section id="project">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 details">
+            <div class="group">
+              <h5>Work</h5>
+              <h1>
+                Period Tracker — An Android Mobile App for Tracking Period
+              </h1>
+            </div>
+            <div class="group">
+              <h5>Year</h5>
+              <h4>
+                2022
+              </h4>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 description"
+          >
+            <p>
+              An Android App to track menstruation by logging the dates when it
+              occured. The user could also log the days when she taken meds and
+              add some description. The logged data will be displayed in a
+              calendar corresponding to their dates.
+            </p>
+            <p>
+              I used Javascript and some Java to code, React-native for the
+              framework, Android for the OS, Vistual Studio for the IDE, Adobe
+              photoshop for the Logo and Splash Screen, SQLite for offline
+              Database, Mongosh Data API for Online Collection.
+            </p>
+          </div>
+        </div>
+        <div class="row screenshots">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/period_tracker/1.png" alt="" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/period_tracker/2.png" alt="" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/period_tracker/3.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../js/element_checker_if_on_screen.js"></script>
+
+    <!-- main -->
+    <script src="../js/main.js"></script>
+
+    <!-- intro -->
+    <script src="../js/intro.js"></script>
+
+    <script>
+      let projElems = Array.from(
+        document.querySelectorAll('#project .details .group'),
+      )
+
+      projElems = projElems.concat(
+        Array.from(document.querySelectorAll('#project .description p')),
+      )
+
+      projElems.forEach((element) => {
+        element.classList.add('slide', 'fade')
+      })
+
+      projElems.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('slide-up', 'fade-in')
+        }, 200 * (index + 1))
+      })
+
+      let screenshots = Array.from(
+        document.querySelectorAll('#project .screenshots .item'),
+      )
+
+      setClassToSlideFade(screenshots)
+      // set onscroll event for element slide fade effect
+      setOnScroll(null, screenshots, (element) => {
+        element.classList.add('slide-up', 'fade-in')
+      })
+    </script>
+  </body>
+</html>

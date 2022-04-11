@@ -24,7 +24,7 @@ const checkIfElementIsOnScreen = (element) => {
 
   // checking for partial visibility
   if (
-    elementPosition.top < window.innerHeight - elementPosition.height / 3 &&
+    elementPosition.top < window.innerHeight - elementPosition.height / 4 &&
     elementPosition.bottom >= 0
   ) {
     return true

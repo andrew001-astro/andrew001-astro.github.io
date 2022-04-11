@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Andrew Gutz - Web Dev and Designer</title>
+
+    <link rel="icon" href="../img/mylogo-normal.png" />
+
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/responsiveness.css" rel="stylesheet" />
+    <link href="../css/slide_and_fade.css" rel="stylesheet" />
+
+    <!-- project -->
+    <link href="../css/project.css" rel="stylesheet" />
+
+    <!-- fonts -->
+    <link
+      href="../fonts/HelveticaNowDisplay-ExtraBold/style.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Redressed&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="../icons/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section id="project">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 details">
+            <div class="group">
+              <h5>Work</h5>
+              <h1>
+                Tech Aid — A Tech Assistance Management System
+              </h1>
+            </div>
+            <div class="group">
+              <h5>My Role</h5>
+              <h4>
+                Developer
+                <br />
+                Designer
+              </h4>
+            </div>
+            <div class="group">
+              <h5>Client</h5>
+              <h4>
+                Bureau of Plant Industry
+              </h4>
+            </div>
+            <div class="group">
+              <h5>Year</h5>
+              <h4>
+                2021
+              </h4>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 description"
+          >
+            <p>
+              Tech Aid is a Tech Assistance Management System aims to help the
+              Bureau of Plant Industry to manage the tech support request of
+              their employees. The employees will request support to the IT
+              Department using the app and the IT employees will be notified.
+              The filling up of request form is digitalized so that the use of
+              paper and ink will be lessen. The request forms can be signed by
+              the chiefs of offices digitaly by a click of an button. Also the
+              IT Department can monitor received requests and generate a report.
+            </p>
+            <p>
+              Used technologies to build this is HTML, CSS, Bootstrap,
+              Javascript, and JQuery for front-end; PHP and Laravel for
+              back-end, Visual Studio for IDE, Adobe Photoshop for icon design
+              and background, MySql for Database.
+            </p>
+          </div>
+        </div>
+        <div class="row screenshots">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/tech_aid/1.png" alt="" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/tech_aid/2.png" alt="" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/tech_aid/3.png" alt="" />
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 item">
+            <img src="../img/projects/tech_aid/4.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../js/element_checker_if_on_screen.js"></script>
+
+    <!-- main -->
+    <script src="../js/main.js"></script>
+
+    <!-- intro -->
+    <script src="../js/intro.js"></script>
+
+    <script>
+      let projElems = Array.from(
+        document.querySelectorAll('#project .details .group'),
+      )
+
+      projElems = projElems.concat(
+        Array.from(document.querySelectorAll('#project .description p')),
+      )
+
+      projElems.forEach((element) => {
+        element.classList.add('slide', 'fade')
+      })
+
+      projElems.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('slide-up', 'fade-in')
+        }, 200 * (index + 1))
+      })
+
+      let screenshots = Array.from(
+        document.querySelectorAll('#project .screenshots .item'),
+      )
+
+      setClassToSlideFade(screenshots)
+      // set onscroll event for element slide fade effect
+      setOnScroll(null, screenshots, (element) => {
+        element.classList.add('slide-up', 'fade-in')
+      })
+    </script>
+  </body>
+</html>

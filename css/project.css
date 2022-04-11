@@ -1,0 +1,167 @@
+#project {
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
+
+#project .row:first-child {
+}
+
+#project .details {
+}
+
+#project .details h1 {
+  padding-top: 0.35rem;
+}
+
+#project .details .group {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+#project .details .group h5 {
+  font-size: 0.9rem;
+}
+
+#project .details .group h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+#project .details .group h5,
+#project .details .group h4 {
+}
+
+#project .description {
+}
+
+#project .description p {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+#project .screenshots {
+  padding-top: 2rem;
+}
+
+#project .screenshots .item {
+}
+
+#project .screenshots .item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #project .screenshots .item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #project {
+    padding-top: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #project .details h1 {
+    padding-top: 0.4rem;
+    font-size: 2.8rem;
+  }
+
+  #project .details .group {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  #project .description p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  #project .row:first-child {
+    min-height: calc(100vh - 7rem);
+    height: calc(100vh - 7rem);
+    max-height: calc(100vh - 7rem);
+  }
+
+  #project .screenshots {
+    padding-top: 0;
+  }
+
+  #project .details {
+    max-width: 50%;
+    padding-right: 2.5rem;
+  }
+  #project .description {
+    max-width: 50%;
+    padding-top: 4rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1280px) {
+  #project {
+    padding-top: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #project .row:first-child {
+    min-height: calc(100vh - 9rem);
+    height: calc(100vh - 9rem);
+    max-height: calc(100vh - 9rem);
+  }
+
+  #project .details {
+    padding-right: 3rem;
+  }
+
+  #project .details h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+  }
+
+  #project .details .group h4 {
+    font-size: 1.3rem;
+  }
+
+  #project .description p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  #project {
+    padding-top: 13rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    max-width: 1480px;
+    margin: 0 auto;
+  }
+
+  #project .row:first-child {
+    min-height: calc(100vh - 13rem);
+    height: calc(100vh - 9rem);
+    max-height: calc(100vh - 13rem);
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  #project .row:first-child {
+    min-height: auto;
+  }
+}
