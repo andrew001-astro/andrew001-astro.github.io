@@ -249,23 +249,25 @@
       </section>
 
       <section id="lwt">
-        <div class="letters">
-          <span>L</span>
-          <span>E</span>
-          <span>T'</span>
-          <span>S</span>
-          <span>W</span>
-          <span>O</span>
-          <span>R</span>
-          <span>K</span>
-          <span>T</span>
-          <span>O</span>
-          <span>G</span>
-          <span>E</span>
-          <span>T</span>
-          <span>H</span>
-          <span>E</span>
-          <span>R</span>
+        <h5>Need a developer?</h5>
+        <h1>Let's work together</h1>
+        <div class="row">
+          <div class="col-md-3">L</div>
+          <div class="col-md-3">E</div>
+          <div class="col-md-3">T'</div>
+          <div class="col-md-3">S</div>
+          <div class="col-md-3">W</div>
+          <div class="col-md-3">O</div>
+          <div class="col-md-3">R</div>
+          <div class="col-md-3">K</div>
+          <div class="col-md-3">T</div>
+          <div class="col-md-3">O</div>
+          <div class="col-md-3">G</div>
+          <div class="col-md-3">E</div>
+          <div class="col-md-3">T</div>
+          <div class="col-md-3">H</div>
+          <div class="col-md-3">E</div>
+          <div class="col-md-3">R</div>
         </div>
       </section>
     </div>
@@ -277,6 +279,8 @@
 
     <!-- intro -->
     <script src="js/intro.js"></script>
+    <!-- lwt -->
+    <script src="js/lwt.js"></script>
 
     <script>
       // container of all elements
@@ -295,11 +299,16 @@
       // adding projects children to total
       totalElements = totalElements.concat(Array.from(projects))
 
+      //getting tech stacks
       let tech_stacks = document.querySelectorAll(
         '#tech_stacks > .row:first-child,  #tech_stacks .row:nth-child(2) [class*=col]',
       )
 
+      //adding tech stacks
       totalElements = totalElements.concat(Array.from(tech_stacks))
+
+      let lwt = document.querySelectorAll('#lwt h5, #lwt h1')
+      totalElements = totalElements.concat(Array.from(lwt))
 
       // set initial class to slide and fade
       setClassToSlideFade(totalElements)

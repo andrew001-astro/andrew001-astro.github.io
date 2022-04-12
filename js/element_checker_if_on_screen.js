@@ -62,3 +62,34 @@ const containerOnScrollHandlerForMyImageFade = () => {
 const removeOnScrollEventMyImageFade = () => {
   window.removeEventListener('scroll', containerOnScrollHandlerForMyImageFade)
 }
+
+let letters
+let callbackForLetters
+
+const setOnScrollForLetters = (container, elemLetters, callback) => {
+  letters = elemLetters
+  callbackForLetters = callback
+  // container.addEventListener('scroll', () => {
+  window.addEventListener('scroll', containerOnScrollHandlerforLetters)
+}
+
+const containerOnScrollHandlerforLetters = () => {
+  let scrollY = window.scrollY
+  // console.log(scrollY)
+  letters.forEach((element) => {
+    if (checkIfElementIsOnScreenFull(element)) {
+      callbackForLetters(element)
+    }
+  })
+}
+
+const checkIfElementIsOnScreenFull = (element) => {
+  let elementPosition = element.getBoundingClientRect()
+  // checking whether fully visible
+  if (
+    elementPosition.top >= 0 &&
+    elementPosition.bottom <= window.innerHeight
+  ) {
+    return true
+  }
+}

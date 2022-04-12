@@ -1,50 +1,72 @@
 :root {
-  --base: 3rem;
-  --base-margin: 1rem;
+  --base-margin: 2rem;
+  --base-padding: 2rem;
+  --base-font-size: 2rem;
 }
 
 #lwt {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-#lwt .letters {
-  /* background-color: red; */
-}
-
-#lwt .letters span {
-  font-size: calc(var(--base) + 1rem);
-  font-family: 'Helvetica Now Display', sans-serif;
-  color: #cfd0d2;
-  /* background-color: aqua; */
+#lwt h1,
+#lwt h5 {
   text-align: center;
-  width: calc(var(--base) + 2rem);
-  height: calc(var(--base) + 2rem);
-  padding-top: calc(var(--base) + 0.5rem);
-  padding-bottom: calc(var(--base) + 0.5rem);
-  /* padding: calc(var(--base) + 0.5rem); */
-  float: left;
-  margin-left: calc(1rem + var(--base-margin));
-  margin-right: calc(1rem + var(--base-margin));
 }
 
-#lwt .letters span:nth-child(4n + 1) {
-  clear: both;
-  float: left;
+#lwt .row {
+  padding-left: calc(var(--base-padding) + 5rem);
+  padding-right: calc(var(--base-padding) + 5rem);
+  display: none;
+  margin: 0 auto;
 }
 
-#lwt .letters span:nth-child(4n - 3) {
-  margin-left: auto;
+#lwt .row [class*='col'] {
+  text-align: center;
+  padding-top: calc(var(--base-padding));
+  padding-bottom: calc(var(--base-padding));
+  font-size: calc(var(--base-font-size) + 2.5rem);
+  color: #cfd0d2;
 }
 
-#lwt .letters span:nth-child(4n) {
-  margin-right: auto;
+#lwt .row [class*='col']:nth-child(3n) {
+  color: #0f141e;
 }
 
-#lwt .letters span:nth-child(4n - 1),
-#lwt .letters span:nth-child(4n - 2) {
-  /* color: green; */
+@media only screen and (min-width: 768px) {
+  #lwt {
+    padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  #lwt h1 {
+    display: none;
+  }
+  #lwt .row {
+    display: block;
+  }
 }
 
-#lwt .letters span:nth-child(4n)::after {
-  /* content: '';
-  display: block; */
+@media only screen and (min-width: 992px) {
+  #lwt .row {
+    max-width: 992px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #lwt {
+    padding: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  #lwt {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    max-width: 1480px;
+    margin: 0 auto;
+  }
 }
