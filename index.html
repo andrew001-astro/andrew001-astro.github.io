@@ -271,6 +271,13 @@
 
       // adding projects children to total
       totalElements = totalElements.concat(Array.from(projects))
+
+      let tech_stacks = document.querySelectorAll(
+        '#tech_stacks > .row:first-child,  #tech_stacks .row:nth-child(2) [class*=col]',
+      )
+
+      totalElements = totalElements.concat(Array.from(tech_stacks))
+
       // set initial class to slide and fade
       setClassToSlideFade(totalElements)
       // set onscroll event for element slide fade effect
