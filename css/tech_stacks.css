@@ -45,7 +45,7 @@
   }
 
   #tech_stacks .item h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
@@ -58,6 +58,7 @@
 
 @media only screen and (min-width: 1024px) {
   #tech_stacks .item h2 {
+    font-size: 2rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-top: 2.5rem;

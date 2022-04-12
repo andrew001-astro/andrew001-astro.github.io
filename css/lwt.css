@@ -1,0 +1,50 @@
+:root {
+  --base: 3rem;
+  --base-margin: 1rem;
+}
+
+#lwt {
+}
+
+#lwt .letters {
+  /* background-color: red; */
+}
+
+#lwt .letters span {
+  font-size: calc(var(--base) + 1rem);
+  font-family: 'Helvetica Now Display', sans-serif;
+  color: #cfd0d2;
+  /* background-color: aqua; */
+  text-align: center;
+  width: calc(var(--base) + 2rem);
+  height: calc(var(--base) + 2rem);
+  padding-top: calc(var(--base) + 0.5rem);
+  padding-bottom: calc(var(--base) + 0.5rem);
+  /* padding: calc(var(--base) + 0.5rem); */
+  float: left;
+  margin-left: calc(1rem + var(--base-margin));
+  margin-right: calc(1rem + var(--base-margin));
+}
+
+#lwt .letters span:nth-child(4n + 1) {
+  clear: both;
+  float: left;
+}
+
+#lwt .letters span:nth-child(4n - 3) {
+  margin-left: auto;
+}
+
+#lwt .letters span:nth-child(4n) {
+  margin-right: auto;
+}
+
+#lwt .letters span:nth-child(4n - 1),
+#lwt .letters span:nth-child(4n - 2) {
+  /* color: green; */
+}
+
+#lwt .letters span:nth-child(4n)::after {
+  /* content: '';
+  display: block; */
+}
