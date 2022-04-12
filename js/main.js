@@ -1,7 +1,11 @@
 ;(() => {
   setTimeout(() => {
-    // window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
   }, 300)
+
+  setTimeout(() => {
+    document.querySelector('html').style.scrollBehavior = 'smooth'
+  }, 500)
 
   let isThemeDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   let icon = document.querySelector("link[rel='icon']")
@@ -47,3 +51,7 @@ function initOnScrollMyImageFade() {
     })
   }
 }
+
+document.querySelector('.fab-scroll-top').addEventListener('click', () => {
+  window.scrollTo(0, 0)
+})

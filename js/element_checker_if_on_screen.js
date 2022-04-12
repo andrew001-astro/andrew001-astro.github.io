@@ -42,6 +42,7 @@ const checkIfElementIsOnScreen = (element) => {
 const containerOnScrollHandler = () => {
   let scrollY = window.scrollY
   // console.log(scrollY)
+  changeFabVisibility(scrollY)
   elements2.forEach((element) => {
     if (checkIfElementIsOnScreen(element)) {
       onScrollCallBack2(element)
@@ -91,5 +92,17 @@ const checkIfElementIsOnScreenFull = (element) => {
     elementPosition.bottom <= window.innerHeight
   ) {
     return true
+  }
+}
+
+let fabScrollTop = document.querySelector('.fab-scroll-top')
+const changeFabVisibility = (scrollY) => {
+  let checkPoint = 0.4
+  let opacity = (scrollY * 0.01) / 10 - checkPoint
+  fabScrollTop.style.opacity = opacity
+  if (opacity <= 0) {
+    fabScrollTop.style.display = 'none'
+  } else {
+    fabScrollTop.style.display = 'flex'
   }
 }
