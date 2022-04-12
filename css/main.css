@@ -77,6 +77,11 @@ h5 {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.fab-scroll-top:hover {
+  background-color: #0f141e;
 }
 
 .light {
