@@ -1,6 +1,6 @@
 ;(() => {
   setTimeout(() => {
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0)
   }, 300)
 
   let isThemeDark = window.matchMedia('(prefers-color-scheme: dark)').matches
