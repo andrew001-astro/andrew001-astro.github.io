@@ -30,8 +30,9 @@
 }
 #intro .picture img {
   object-fit: contain;
+  width: 100%;
   max-width: 25rem;
-  min-width: 330px;
+  /* min-width: 330px; */
 }
 
 #intro .developer {
@@ -83,7 +84,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #intro {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -123,7 +124,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #intro {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -144,7 +145,7 @@
 /* Large devices (laptops/desktops, 1070px and up) */
 @media only screen and (min-width: 1070px) {
   #intro {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
