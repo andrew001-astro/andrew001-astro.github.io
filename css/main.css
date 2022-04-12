@@ -83,6 +83,35 @@ h5 {
   color: white;
 }
 
+a {
+  position: relative;
+}
+
+a::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 200ms;
+  opacity: 0;
+}
+
+:is(#intro) a::after {
+  background: #0f141e;
+}
+
+:is(#footer) a::after {
+  background: #878a8f;
+}
+
+a:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
 @media only screen and (max-width: 330px) {
 }
 
