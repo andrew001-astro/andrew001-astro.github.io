@@ -1,7 +1,7 @@
 .slide {
   transition: all 0.2s ease-in;
   position: relative;
-  top: 1.5rem;
+  top: 2rem;
 }
 
 .slide-up {

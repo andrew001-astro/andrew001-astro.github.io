@@ -1,12 +1,12 @@
 :root {
   --base-margin: 2rem;
-  --base-padding: 2rem;
+  --base-padding: 1rem;
   --base-font-size: 2rem;
 }
 
 #lwt {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -17,8 +17,8 @@
 }
 
 #lwt .row {
-  padding-left: calc(var(--base-padding) + 5rem);
-  padding-right: calc(var(--base-padding) + 5rem);
+  padding-left: calc(var(--base-padding) + 8rem);
+  padding-right: calc(var(--base-padding) + 8rem);
   display: none;
   margin: 0 auto;
 }
@@ -39,7 +39,7 @@
   #lwt {
     padding: 3rem;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
   }
 
   #lwt h1 {
@@ -60,14 +60,14 @@
   #lwt {
     padding: 4rem;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 9rem;
   }
 }
 
 @media only screen and (min-width: 1480px) {
   #lwt {
     padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
     max-width: 1480px;
     margin: 0 auto;
   }

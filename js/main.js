@@ -12,17 +12,19 @@
 
   if (isThemeDark) {
     if (window.location.pathname.split('/').includes('projects')) {
-      icon.setAttribute('href', '../img/mylogo-hover.png')
+      icon.setAttribute('href', '../img/mylogo-hover.svg')
     } else {
-      icon.setAttribute('href', 'img/mylogo-hover.png')
+      icon.setAttribute('href', 'img/mylogo-hover.svg')
     }
   } else {
     if (window.location.pathname.split('/').includes('projects')) {
-      icon.setAttribute('href', '../img/mylogo-normal.png')
+      icon.setAttribute('href', '../img/mylogo-normal.svg')
     } else {
-      icon.setAttribute('href', 'img/mylogo-normal.png')
+      icon.setAttribute('href', 'img/mylogo-normal.svg')
     }
   }
+
+  setNavLogoUrl()
 })()
 
 function setClassToSlideFade(elements) {
@@ -55,3 +57,12 @@ function initOnScrollMyImageFade() {
 document.querySelector('.fab-scroll-top').addEventListener('click', () => {
   window.scrollTo(0, 0)
 })
+
+function setNavLogoUrl() {
+  let navLogoName = document.querySelector('nav .logo-name')
+  if (window.location.pathname.split('/').includes('projects')) {
+    navLogoName.setAttribute('href', '../')
+  } else {
+    navLogoName.setAttribute('href', window.location.href)
+  }
+}

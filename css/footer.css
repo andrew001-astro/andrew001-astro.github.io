@@ -55,9 +55,9 @@
   max-width: 2.5rem;
 }
 
-#footer .logo .container img {
+#footer .logo svg {
+  fill: #878a8f;
   width: 100%;
-  object-fit: cover;
 }
 
 #footer .logo span {
