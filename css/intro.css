@@ -32,7 +32,6 @@
   object-fit: contain;
   width: 100%;
   max-width: 25rem;
-  /* min-width: 330px; */
 }
 
 #intro .developer {
@@ -84,15 +83,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #intro {
-    /* min-height: 100vh; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   #intro .details {
     position: static;
-
-    padding-top: 15rem;
+    padding-top: 5rem;
   }
 
   #intro .details :is(h1, h2, h3) {
@@ -103,19 +100,19 @@
   #intro .picture {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
     min-height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     left: auto;
     z-index: -1;
-    overflow: hidden;
+    padding-top: 7rem;
   }
   #intro .picture img {
-    max-width: 50rem;
-    min-width: 50rem;
+    max-width: 30rem;
+    min-width: 30rem;
     animation-name: fade-in;
     animation-duration: 2s;
   }
@@ -124,7 +121,6 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #intro {
-    /* min-height: 100vh; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -145,7 +141,6 @@
 /* Large devices (laptops/desktops, 1070px and up) */
 @media only screen and (min-width: 1070px) {
   #intro {
-    /* min-height: 100vh; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -156,7 +151,12 @@
   }
 
   #intro .picture {
-    justify-content: flex-end;
+    padding-top: 3rem;
+  }
+
+  #intro .picture img {
+    max-width: 40rem;
+    min-width: 40rem;
   }
 }
 
@@ -176,6 +176,11 @@
   #intro .picture {
     justify-content: flex-start;
   }
+
+  #intro .picture img {
+    max-width: 45rem;
+    min-width: 45rem;
+  }
 }
 
 @media only screen and (min-width: 1336px) {
@@ -187,9 +192,20 @@
   }
 }
 
+@media only screen and (min-width: 1360px) {
+  #intro .picture {
+    padding-top: 0rem;
+  }
+}
+
 @media only screen and (min-width: 1480px) {
   #intro {
     max-width: 1480px;
+  }
+
+  #intro .details {
+    position: static;
+    padding-top: 18rem;
   }
 }
 
@@ -206,7 +222,6 @@
     position: static;
     max-width: 50%;
     justify-content: center;
-    padding-top: 0;
     overflow: visible;
   }
 
