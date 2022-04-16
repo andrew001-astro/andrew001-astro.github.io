@@ -60,10 +60,10 @@ document.querySelector('.fab-scroll-top').addEventListener('click', () => {
 
 function setNavLogoUrl() {
   let navLogoName = document.querySelector('nav .logo-name')
-  if (window.location.pathname.split('/').includes('projects')) {
-    // navLogoName.setAttribute('href', '../')
-    navLogoName.setAttribute('href', window.location.origin)
-  } else {
-    navLogoName.setAttribute('href', window.location.origin)
-  }
+  navLogoName.setAttribute('href', window.location.origin)
+  // if (window.location.pathname.split('/').includes('projects')) {
+  //   navLogoName.setAttribute('href', '../')
+  // } else {
+  //   navLogoName.setAttribute('href', window.location.origin)
+  // }
 }
