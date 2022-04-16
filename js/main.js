@@ -65,4 +65,6 @@ function setNavLogoUrl() {
   } else {
     navLogoName.setAttribute('href', window.location.href)
   }
+
+  console.log(window.location)
 }
