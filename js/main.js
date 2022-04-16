@@ -63,8 +63,6 @@ function setNavLogoUrl() {
   if (window.location.pathname.split('/').includes('projects')) {
     navLogoName.setAttribute('href', '../')
   } else {
-    navLogoName.setAttribute('href', window.location.href)
+    navLogoName.setAttribute('href', window.location.origin)
   }
-
-  console.log(window.location)
 }
