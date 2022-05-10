@@ -41,6 +41,17 @@
   padding-bottom: 0.3rem;
 }
 
+#project .details .visit-project{
+  color: #878a8f;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#project .details .visit-project a{
+  text-decoration: none;
+  color: #878a8f;
+}
+
 #project .screenshots {
   padding-top: 2rem;
 }
