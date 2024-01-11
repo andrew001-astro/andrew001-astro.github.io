@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Adobe Photoshop",
+        "imagePath": "img/tech_stacks_2/adobe_photoshop.png",
+        "otherNames":["ps","photoshop"]
+    },
+    {
+        "name": "Amazon Web Services",
+        "imagePath": "img/tech_stacks_2/aws.png",
+        "otherNames":["aws","cloud","infra"]
+    },
+    {
+        "name": "Bash Script",
+        "imagePath": "img/tech_stacks_2/bash.png",
+        "otherNames":["bash","script"]
+    }
+    ,
+    {
+        "name": "Bootstrap",
+        "imagePath": "img/tech_stacks_2/bootstrap.png",
+        "otherNames":["front-end","frontend"]
+    },
+    {
+        "name": "Cascading Stylesheet",
+        "imagePath": "img/tech_stacks_2/css.png",
+        "otherNames":["css","front-end","frontend"]
+    },
+    {
+        "name": "Docker",
+        "imagePath": "img/tech_stacks_2/docker.png",
+        "otherNames":["container"]
+    },
+    {
+        "name": "Hypertext Markup Language",
+        "imagePath": "img/tech_stacks_2/html.png",
+        "otherNames":["html","front-end","frontend"]
+    },
+    {
+        "name": "Java",
+        "imagePath": "img/tech_stacks_2/java.png",
+        "otherNames":["programming language","pl","back-end","backend"]
+    },
+    {
+        "name": "JavaScript",
+        "imagePath": "img/tech_stacks_2/js.png",
+        "otherNames":["js","es6","programming language","pl","front-end","frontend"]
+    },
+    {
+        "name": "Laravel",
+        "imagePath": "img/tech_stacks_2/laravel.png",
+        "otherNames":["framework", "php"]
+    },
+    {
+        "name": "Linux",
+        "imagePath": "img/tech_stacks_2/linux.png",
+        "otherNames":["os", "operating system"]
+    },
+    {
+        "name": "PHP",
+        "imagePath": "img/tech_stacks_2/php.png",
+        "otherNames":["programming language","pl","back-end","backend"]
+    },
+    {
+        "name": "Postman",
+        "imagePath": "img/tech_stacks_2/postman.png",
+        "otherNames":["testing"]
+    },
+    {
+        "name": "Python",
+        "imagePath": "img/tech_stacks_2/python.png",
+        "otherNames":["programming language","pl","back-end","backend"]
+    },
+    {
+        "name": "React.js",
+        "imagePath": "img/tech_stacks_2/react.png",
+        "otherNames":["js","javascript", "library","front-end","frontend"]
+    },
+    {
+        "name": "Spring",
+        "imagePath": "img/tech_stacks_2/spring.png",
+        "otherNames":["framework", "java", "back-end","backend"]
+    },
+    {
+        "name": "SQL",
+        "imagePath": "img/tech_stacks_2/sql.png",
+        "otherNames":["query", "script","back-end","backend"]
+    }
+]

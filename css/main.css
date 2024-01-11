@@ -39,7 +39,7 @@ h4 {
 
 p,
 span,
-h5 {
+h5{
   /* font-family: 'Nunito', sans-serif; */
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Montserrat', sans-serif; */
@@ -226,4 +226,27 @@ a:hover::after {
   to {
     opacity: 1;
   }
+}
+
+
+.textbox, .textbox:focus{
+  outline: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.61);
+  padding: 1rem 1.5rem;
+}
+
+.textbox:focus{
+  font-size: 1.17rem;
+  color: #0f141e;
+}
+
+.textbox{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.123);
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+  font-family: 'Open Sans', sans-serif;
+  color: #878a8f;
+  font-size: 1rem;
 }
